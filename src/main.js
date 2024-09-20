@@ -1,8 +1,25 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from './App'
+import PrismicVue from '@prismicio/vue'
 
-Vue.config.productionTip = false
+const endpoint = 'https://vue-onepagewebsite.cdn.prismic.io/api/v2'
+
+const routes = [
+  // {
+  //   type: 'article',
+  //   path: 'article/:uid',
+  // },
+  {
+    type: 'home',
+    path: '/'
+  }
+]
+
+Vue.use(PrismicVue, {
+  endpoint,
+  apiOptions: { routes },
+})
 
 new Vue({
-  render: h => h(App),
+  render: (h) => h(App)
 }).$mount('#app')
