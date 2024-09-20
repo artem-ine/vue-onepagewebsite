@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PrismicRichText :field="response?.data.homepage" />
+    <PrismicRichText :field="response?.data.home_title" />
     <PrismicImage 
       :field="response?.data.home_image" 
       :imgixParams="{ sat: -30 }"
@@ -38,5 +38,4 @@ export default {
     object-fit: cover;
     margin: 2px;
   }
-
 </style>
