@@ -5,13 +5,13 @@ import PrismicVue from '@prismicio/vue'
 const endpoint = 'https://vue-onepagewebsite.cdn.prismic.io/api/v2'
 
 const routes = [
-  // {
-  //   type: 'article',
-  //   path: 'article/:uid',
-  // },
   {
     type: 'home',
     path: '/'
+  }, 
+  {
+    type: 'article',
+    path: '/article/:uid',
   }
 ]
 

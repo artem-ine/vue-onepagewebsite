@@ -14,19 +14,16 @@ export default {
   name: 'HomeTest',
   data() {
     return {
-      // Initialize "response"
       response: null
     }
   },
   methods: {
     async getContent() {
-      // Query the API and assign the response to "response"
       const response = await this.$prismic.client.getSingle('home')
       this.response = response
     }
   },
   created() {
-    // Call the API query method
     this.getContent()
   }
 }

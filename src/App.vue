@@ -1,16 +1,22 @@
 <template>
   <div id="app">
-    <HomeTest />
+    <NavigationBar />
+    <HomePage />
+    <ArticlePage />
   </div>
 </template>
 
 <script>
-import HomeTest from './components/HomeTest.vue'
+import HomePage from './components/HomePage.vue'
+import ArticlePage from './components/ArticlePage.vue'
+import NavigationBar from './components/NavigationBar.vue'
 
 export default {
   name: 'App',
   components: {
-    HomeTest
+    NavigationBar,
+    HomePage,
+    ArticlePage
   }
 }
 </script>
